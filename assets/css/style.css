@@ -1,0 +1,132 @@
+@import url('https://fonts.googleapis.com/css?family=Roboto:300,400,700&display=swap');
+* { margin: 0; padding: 0; box-sizing: border-box; }
+
+body { font-family: 'Roboto', sans-serif; }
+a { text-decoration: none; }
+
+/******************************DECLARATION DE CLASSES****************************/
+/*Déclaré ici avant tout contenu afin de pouvoir être utilisé partout plus tard*/
+h1, h3, h4, h5 { font-weight: 500; text-transform: capitalize; }
+h2 { padding-bottom: 20px; font-weight: 500; }
+
+.header_0 { font-size: 86px; }
+.header_1 { font-size: 63px; }
+.header_2 { font-size: 38px; }
+.center_text {text-align: center;}
+.ptb_1 { padding: 40px 0; }
+.ptb_2 { padding: 20px 0;}
+
+.container {
+    max-width: 1280px;
+    margin: auto;
+    overflow: hidden;
+}
+
+.btn {
+    color: #1d1d1d;
+    background-color: #fff;
+    padding: 10px 20px;
+    border-radius: 4px;
+}
+.link {color: #ffb42a;}
+
+/**********************CREATION DE LA BARRE DE NAVIGATION************************/
+
+.navbar {
+    position: fixed;
+    display: flex;
+    justify-content: space-between;
+    padding: 16px;
+    width: 100%;
+    background-color: #1d1d1d;
+
+}
+
+.navbar ul {
+    display: flex;
+    align-items: center;
+    list-style: none;
+}
+
+.logo_title, 
+.navbar ul li a,
+.header
+ { color: #fff; 
+    align-content: center;
+    list-style-type: none;
+}
+
+.navbar ul li button {
+    color: #fafafa;
+    background-color:  #1d1d1d;
+    padding: 12px;
+    margin: 0 6px;
+}
+
+.navbar ul li button:hover {
+    color: #1d1d1d;
+    background-color: #ffb42a;
+    border-radius: 4px;
+}
+/*******************************CREATION DU HEADER*******************************/
+.pic_me {
+			border-radius: 50%; border-color: white; border-style: solid; border-width: medium;
+}
+.header {
+    background: url('../img/Background.jpg') no-repeat center/cover;
+    height: 93.9vh;
+
+}
+    
+.header .header_content {
+    background-color: #00000065;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding-bottom: 35px; /*Pour rectifier le placement et centrer sur la page*/
+}
+
+/************************CREATION DES ITEMS SOUS LE HEADER***********************/
+
+.btn_cta { font-size: 1rem; font-family: 'Roboto', sans-serif ; border: unset; background-color: #ffb42a; }
+.btn_cta:hover { cursor: pointer; background-color: #1d1d1d; color: #ffb42a; }
+.header .header_content .header_1 { padding-bottom: 12px;}
+.cta_catch { font-size: 22px; margin-bottom: 22px;}
+/* Section Accueil */
+.accueil_section { background-color: #fafafa;}
+.accueil_section_top_text { font-size: 29px; padding-bottom: 70px; }
+.accueil_items { display: flex; padding: 16px; }
+.accueil { flex: 1; padding: 30px 30px 15px 30px; }
+.accueil_text { padding-top: 5px;}
+/* Section Expériences */
+.exp_section { background-color: #fafafa; display: flex;}
+.exp_section_top_text { font-size: 29px; padding-bottom: 30px; }
+.exp { flex: 1; padding: 30px 30px 15px 30px; }
+.exp_text { padding-top: 5px;}
+.exp_section li { list-style: none ;  padding: 10px 0; font-weight: bold ; padding-top: 30px;}
+/* Section Compétences*/
+.comp_section { background-color: #fafafa; display: flex;}
+.com_section_top_text { font-size: 29px; padding-bottom: 30px; }
+.comp { flex: 1; padding: 30px 30px 15px 30px; }
+.comp_text { padding-top: 5px;}
+/* Section Contact */
+.contact_form {padding: 200px;}
+.contact .contact_text { padding-bottom: 40px; }
+.contact .contact_form label { width: 62%; display: block; }
+.contact .contact_form input,
+.contact .contact_form textarea {
+  width: 40%;
+  padding: 18px;
+  margin: 7px 0;
+  border: 1px solid #dddddd;
+  border-radius: 5px;
+}
+.input_required { color: #dc143c; }
+.btn_contact { cursor: pointer;; background-color: #ffb42a; font-size: 19px; }
+.btn_contact:hover { background-color: #1d1d1d; color: #ffb42a; }
+
+
+/*******************************CREATION DU FOOTER*******************************/
+.main_footer { background-color: #1d1d1d; color: #fff; }

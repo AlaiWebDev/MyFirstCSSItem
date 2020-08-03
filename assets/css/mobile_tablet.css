@@ -1,0 +1,44 @@
+body { background-color: brown;}
+
+
+.header_0 { text-align: center; font-size: 2rem; }
+.header_1 { line-height: 3rem; font-size: 2rem;}
+.header_2 { font-size: 1.5rem;}
+
+/* Navbar*/
+.navbar { flex-direction: column; align-items: center; padding: 0 0.2rem; }
+.navbar ul { flex-direction: column; list-style: none; }
+.navbar ul li { margin-bottom: 0.5rem; }
+.logo_title { margin-bottom: 0.5rem; }
+.navbar ul li a { size: 50%;}
+
+
+/* Header*/
+.pic_me { max-width: 40%; height: auto; }
+.cta_catch { font-size: 1.1rem; text-align: center; padding: 0 0.1rem; }
+
+/* Accueil*/
+.accueil_section_top_text { font-size: 1.2rem; }
+.accueil_items { display: flex; padding: 16px; justify-content: center; }
+/* Exépriences*/
+.exp_section_top_text { font-size: 1.2rem; }
+/* Compétences*/
+.comp_section_top_text { font-size: 1.2rem; }
+/* Contact*/
+.contact { display: flex; padding: 16px; justify-content: center; }
+.contact_form {padding: 200px;}
+.contact .contact_text { padding-bottom: 40px; }
+.contact .contact_form input { padding: 20px; height: 2rem; width: 100%; font-size: 0.5rem;}
+.contact .contact_form textarea {
+  width: 100%;
+  height: 3rem;
+  resize: none;
+  padding: 18px;
+  margin: 7px 0;
+  border: 1px solid #dddddd;
+  border-radius: 5px;
+  font-size: 0.8em;
+}
+.input_required { color: #dc143c; }
+.btn_contact { cursor: pointer;; background-color: #ffb42a; font-size: 19px;  }
+.btn_contact:hover { background-color: #1d1d1d; color: #ffb42a; }
