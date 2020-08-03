@@ -1,0 +1,231 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <!--<link rel="stylesheet" href="./css/bootstrap.min.css">-->
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" media ="screen and (max-width:800px)" href="./css/mobile_tablet.css">
+    <title>AlainWebDev</title>
+    </head>
+    <body>
+<!--****************DECLARATION DE LA BARRE DE NAVIGATION**********************-->
+        <nav class="navbar">
+            <a href="#">
+                <h1 class="logo_title">ORLUK Alain</h1>
+            </a>
+            <ul>
+                <li><button class="btn btn_cta" onclick="showAccueil();">Accueil</button></li>
+                <li><button class="btn btn_cta" onclick="showExp();">Expériences</button></li>
+                <li><button class="btn btn_cta" onclick="someFunc3();">Compétences</button></li>
+                <li><button class="btn btn_cta" onclick="showContact();">Me contacter</button></li>
+            </ul>
+        </nav>
+<!--**************************DECLARATION DU HEADER****************************-->
+        <header class="header">
+            <div class="header_content">
+                <img class="pic_me" src="img/Photo Alain.jpg" id="Accueil"></img>
+                <h1 class="header_0">ORLUK Alain</h1>
+                <p class="cta_catch">Bienvenue sur mon espace de présentation</p>
+            <button class="btn btn_cta" onclick="showBref();">En savoir plus</button>
+            </div>
+        </header>
+<!--*************************DECLARATION DES SECTIONS**************************-->
+<!-- Section Accueil-->
+        <section class="accueil_section center_text ptb_1">
+            <div class="container">
+                <p class="accueil_section_top_text" id="Bref">
+                    Ici vous pourrez découvrir mon profil professionnel.
+                    Sachez dès à présent que j'ai commencé à programmer dès l'âge de 13 ans.
+                    C'était en langage Basic Amstrad et j'ai codé un jeu de gestion pétrolière 
+                    inspiré de la série TV "<a class="link" href="#container" onclick="someFunc1();">DALLAS</a>" de l'époque.
+                    <br>
+                    Vous pourrez également avoir un aperçu de mes compétences puisque j'ai codé ce site moi-même.
+                </p>
+                <h2 class="header_1">Mes principales qualités</h2>
+                <div class="accueil_items">
+                    <div class="accueil">
+                        <h3 class="header_2">Curieux</h3>
+                        <p class="accueil_text">Je cherche toujours à en savoir plus</p>
+                    </div>
+                    <div class="accueil">
+                        <h3 class="header_2">Souple</h3>
+                        <p class="accueil_text">Je sais m'adapter très rapidement à un changement quelconque</p>
+                    </div>
+                    <div class="accueil">
+                        <h3 class="header_2">Tenace</h3>
+                        <p class="accueil_text" id="Exp">Lorsque je me lance dans quelque chose, je vais au bout</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+
+<!--Section Expériences-->
+        <section class="exp_section center_text ptb_1">
+            <div class="container" >
+                <p class="exp_section_top_text" >
+                 Voici quelques unes de mes expériences
+                <h2 class="header_1">Analyste-programmeur AS400</h2>
+                <div class="exp_items">
+                    <div class="exp">
+                        <p class="exp_text">
+                            J'ai travaillé 3 années de suite en tant que développeur <a class="link" href="#container2" onclick="ImageMax('img/RPG.png','Exemple de code RPG');">RPG III/IV</a> sur IBM AS400.
+                            <ul>
+                                <li>2 ans au sein de la SSII T-Systems SOLERI à Lingolsheim (67).</li>
+                            J'ai travaillé aussi bien en agence que chez nos clients.
+                                <li>1 an pour la société Mercos Informatique à Bischheim (67).</li>
+                            Nous travaillions pour une PME de l'agro-alimentaire qui souhaitait 
+                            moderniser ses expéditions via des automates contrôlés informatiquement
+                            </ul>
+                        </p>
+                    </div>
+                    <div class="exp">
+                        <h2 class="header_1">Webmaster d'un site pour la planification de <a class="link" href="#container2" onclick="someFunc2();">Lan Party</a></h2>
+                        <p class="exp_text">Selon le calendrier décidé, j'informais les visiteurs des prochains évènements.</p>
+                        <ul>
+                            <li>Dates et horaires</li>
+                            <li>Lieux et itinéraires</li>
+                            <li>Nombre de places disponibles et tarifs</li>
+                            <li>Possibilités de co-voiturage</li>
+                            <li>etc.</li>
+                        </ul>
+                    </div>
+                    <div class="exp">
+                        <h2 class="header_1">Responsable rayon informatique</h2>
+                        <p class="exp_text">Au sein d'une grande enseigne de vente de matériels d'occasion.
+                            <li>Le stock et son renouvellement</li>
+                            <li>La configuration logicielle et matérielle des produits</li>
+                            <li>L'accueil et la vente-conseil</li>
+                            <li>Le SAV</li>
+                            <br>
+                        En 1 an j'ai gonflé le chiffre d'affaire du rayon de 80% en augmentant la marge globale de plus de 30%.
+                        </p>
+                    </div>
+                    <div class="exp">
+                        <h2 class="header_1">Auto-entrepreneur</h2>
+                        <p class="exp_text">Mon activité consistait à intervenir chez des particuliers afin de prendre en charge leurs besoins :
+                            <ul>
+                                <li>Dépannage</li>
+                                <li>Formation</li>
+                                <li>Installation et configuration de périphériques</li>
+                                <li>etc.</li>
+                            </ul>
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </section>
+<!--Section Compétences-->
+        <section class="comp_section center_text ptb_1">
+            <div class="container">
+                <p class="comp_section_top_text" id="Comp">
+                <h2 class="header_1">En vrac mes compétences</h2>
+                <div class="comp_items">
+                    <div class="comp">
+                        <img class="pic_me" src="img/Noob.gif"></img>
+                        <h3 class="header_2">Ah ah c'était une blague. Je n'ai pas encore de vrais compétences puisque je candidate pour votre formation !</h3>
+                        <p class="comp_text">
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </section>
+<!--Section Contact-->
+<section class="contact center_text">
+    <div class="contact_form p_1">
+      <h2 class="header_1" id="Contact">Me contacter</h2>
+        <p class="contact_text ptb_2">Veuillez remplir le formulaire ci-après. <br>Merci de votre intérêt.</p>
+      <form>
+        <div class="label_input_group">
+          <label for="email">E-mail <span class="input_required">*</span></label>
+          <input type="email" name="email" id="email" placeholder="Entrez votre adresse e-mail ..." required>
+        </div>
+        <div class="label_input_group">
+          <label for="message">Message <span class="input_required">*</span></label>
+          <textarea name="message" id="message" placeholder="Entrez votre message ..." required></textarea>
+        </div>
+        <input type="submit" value="Envoyer votre message" class="btn btn_contact">
+      </form>
+    </div>
+  </section>
+
+<!--*************************************DECLARATION DU FOOTER**********************************-->
+        <footer class="main_footer center_text ptb_2">
+            <div class="container">
+                <p>Copyright &copy; - ORLUK Alain 2020 - Tous droits réservés</p>
+            </div>
+        </footer>
+<!--*******************************DECLARATION DU CODE JAVASCRIPT*******************************-->
+        <script>
+			function Dallas(){
+				var Dallas = new Audio('audio/Dallas.mp3'); Dallas.volume=0.3;
+				Dallas.play();
+			}
+            function Headshot(){
+				var Headshot = new Audio('audio/Headshot.mp3'); Headshot.volume=0.3;
+				Headshot.play();
+            }
+            function Noob(){
+				var Noob = new Audio('audio/Noob.mp3'); Noob.volume=0.3;
+				Noob.play();
+			}
+        </script>
+        <script type="text/javascript">
+            function ImageMax(chemin,titre)
+            {
+            i1 = new Image;
+            i1.src = chemin;
+            html = '<html><head><title>'+titre+'</title></head><body scroll="no" leftmargin="0" marginwidth="0" topmargin="0" marginheight="0" onBlur="top.close()"><IMG src="'+chemin+'" BORDER=0 NAME=ImageMax onLoad="window.resizeTo(document.ImageMax.width+10,document.ImageMax.height+30)"></body></html>';
+            popupImage = window.open('','_blank','width=600,height=400,toolbar=0,scrollbars=0,resizable=no');
+            popupImage.document.open();
+            popupImage.document.write(html);
+            }
+            function someFunc1() {
+                ImageMax('img/Dallas.jpg','DALLAS');
+                Dallas();
+            }
+            function someFunc2() {
+                ImageMax('img/LanParty.jpg','LanParty');
+                Headshot();
+            } 
+            function someFunc3() {
+                Noob();
+                var elmntComp = document.getElementById("Comp");
+                elmntComp.scrollIntoView({
+                block: 'center',
+                });
+            } 
+            function showBref() {
+                var elmntBref = document.getElementById("Bref");
+                elmntBref.scrollIntoView({
+                block: 'center',
+                });
+            }
+            function showAccueil() {
+                var elmntAccueil = document.getElementById("Accueil");
+                elmntAccueil.scrollIntoView({
+                block: 'center',
+                });
+            }
+            function showExp() {
+                var elmntExp = document.getElementById("Exp");
+                elmntExp.scrollIntoView({
+                block: 'start',
+                });
+            }
+            function showContact() {
+                var elmntContact = document.getElementById("Contact");
+                elmntContact.scrollIntoView({
+                block: 'center',
+                });
+            }
+            </script>
+    </body>
+</html>
